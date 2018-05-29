@@ -1,4 +1,4 @@
-﻿var word = (process.argv[2]);
+﻿var word = (process.argv[1]);
 var result = "";
 
 for (var i = 0; i < word.length; i++) {
