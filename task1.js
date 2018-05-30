@@ -1,12 +1,15 @@
 ﻿var word = (process.argv[1]);
-var result = "";
+process.stdout.write(blockFilter(word));
 
-for (var i = 0; i < word.length; i++) {
+function blockFilter(word) {
+	word = '' + word;
+	var result = "";
+	for (var i = 0; i < word.length; i++) {
         if (word[i] !== "К" && word[i] !== "к"
-        	&& word[i] !== "Р" && word[i] !== "р"
-        	&& word[i] !== "Н" && word[i] !=="н") {
+            && word[i] !== "Р" && word[i] !== "р"
+            && word[i] !== "Н" && word[i] !== "н") {
                 result += word[i];
         }
+	}
+	return result;
 }
-
-process.stdout.write(result);
