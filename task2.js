@@ -1,5 +1,5 @@
-﻿var str1 = (process.argv[1]);
-var str2 = (process.argv[2]);
+﻿var str1 = (process.argv[2]);
+var str2 = (process.argv[3]);
 
 process.stdout.write(String(getMinMove(str1, str2)));
 
