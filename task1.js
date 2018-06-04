@@ -1,4 +1,4 @@
-﻿var word = (process.argv[1]);
+﻿var word = (process.argv[2]);
 process.stdout.write(blockFilter(word));
 
 function blockFilter(word) {
