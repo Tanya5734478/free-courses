@@ -1,5 +1,5 @@
-﻿var a = Math.abs(+process.argv[1]);
-var b = Math.abs(+process.argv[2]);
+﻿var a = Math.abs(+process.argv[2]);
+var b = Math.abs(+process.argv[3]);
 
 process.stdout.write(String(greatestCommonDiviser(a, b)));
 
